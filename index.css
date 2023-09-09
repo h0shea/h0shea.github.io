@@ -1,0 +1,41 @@
+.title   {
+    font-family:helvetica;
+    background-color: rgb(102, 0, 133);
+    color: white;
+    background: linear-gradient(135deg, rgba(21,0,36,1) 0%, rgba(78,9,121,1) 35%, rgba(136,0,255,1) 100%);
+    border-style: outset;
+    border-color: rgb(136,0, 255);
+    border-width: 5px;
+    font-style:oblique;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 200px;
+    box-shadow: 3.5px 3.5px black;
+}
+
+.boxdesc   {
+    background: rgb(0, 199, 43);
+    border-color: rgba(0,255,55,1);
+    border-width:5px;
+    border-style: outset;
+    color:black;
+    font-style:normal;
+    font-weight: 100;
+    text-align: left;
+    font-family: helvetica;
+    box-shadow: 3.5px 3.5px black;
+}
+
+.boxdesc img   {
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    border-style: inset;
+    border-color:  rgb(0, 121, 16);
+    border-radius: 10%;
+}
+
+body{
+    background-image: url("sky2.jpg");
+    background-size: 1500px;
+}
