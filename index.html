@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <head>
     <title>Homepage</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="new_homepage.css">
     <link rel="icon" type="image/x-icon" href="hm_favicon.png">
 </head>
 
 <body>
-    <div class="home_logo">
-        <img class="logo" src="2024 logo_03.png">
-        <div class="home_icons" style="top: 30px; left: 250px;">
-            <a href="h0shea.github.io">
-                <img src="home icon.png" class="icons">
-            </a>
-        </div>
+    <div class="nav">
+        <img src="2024 logo_03.png" class="logo">
+        <a href="https://h0shea.github.io/">
+            <img src="home icon.png" class="icon" style="top: 30px; left: 100px;">
+            <img src="info icon.png" class="icon" style="top: 35px; left: 445px;">
+        </a>
     </div>
 
-    <div class="big_box">
-        <img class="welcome" src="welcome image.png">
-        <br>
+    <div class="main_box">
+        <img class="main_image" src="welcome image.png">
+
         <p align="justify">Welcome! My name is Hoshea Manein and here is my personal website. This website was only used for sharing my JavaScript projects for almost 1½ years, 
             but I decided to update it to be more like a blog, where I could share things about me, my portfolio/creations, some updates/news, etc. The design of the website has also changed, 
             from one that looks cheap and rushed, to the one that is more pleasent and values aesthetics. Have fun roaming around my site, and thanks for visiting!
         </p>
-        <div class="small_box_01">
-            <p align="center" style="margin: 0px"><b>My JavaScript Projects</b></p>
-            <table style="margin: auto;">
-                <tr>
-                    <td><a href="https://h0shea.github.io/10x10-prime-number-grid/"><img src="10x10png_icon.png" style="width: 100px; height: 100%; display: block; margin: auto;"></a></td>
-                    <td><a href="https://h0shea.github.io/roblox-username-generator/"><img src="rug_icon.png" style="width: 100px; height: 100%; display: block; margin: auto;"></a></td>
-                </tr>
-                <tr>
-                    <td><p align="center" style="margin: 0 10px 0 10px;">10x10 Prime Number Grid</p></td>
-                    <td><p align="center" style="margin: 0 10px 0 10px;">Roblox Username Generator</p></td>
-                </tr>
-            </table>
+
+        <div class="boxes">
+            <div class="box green" style="width: 420px;">
+                <p align="center" class="box_title"><b>JavaScript Projects</b></p>
+                <div style="width: auto;" class="box_table">
+                    <div class="box_cell">
+                        <div class="cell_img">
+                            <img src="10x10png_icon.png">
+                        </div>
+                        <p style="margin: 0px;"><b>10x10 Prime Number Generator</b></p>
+                        <p style="margin: 0px;" align="justify">Have you ever wanted to find prime numbers in a 10x10 grid? Well, look no further than the 10x10 Prime Number Grid, a site that could create a 10x10 grid for prime numbers that are bigger than just 100.</p>
+                    </div>
+                    <br>
+                    <div class="box_cell">
+                        <div class="cell_img">
+                            <img src="rug_icon.png">
+                        </div>
+                        <p style="margin: 0px;"><b>Roblox Username Generator</b></p>
+                        <p style="margin: 0px;" align="justify">Roblox Username Generator is a generator site that generates roblox usernames to snipe and use. Try inputing the amount of characters for the desired username, and use the settings to make specific criterias.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box purple" style="width: 420px;">
+                <p align="center" class="box_title"><b>Recent YT Video</b></p>
+                <div style="width: auto;" class="box_table">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/_PIMauISuRU?si=trfZBFzUdEUmY3Bf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
-    <br>
-    <p align="center" style="color: gray; font-size: 12px;"><b>Note: This website is unfinished due to lack of content. New content will be added soon and the site will be considered finished whenever the creator wants to.</b></p>
-    <img src="under construction gif.gif" style="display: block; margin: auto; width: 100px;">
 </body>
