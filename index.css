@@ -8,54 +8,142 @@
     src: url(fonts/futura\ medium\ bt.ttf);
 }
 
+@font-face {
+    font-family: "Avant Garde Bold";
+    src: url(fonts/ITCAvantGardeStd-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Avant Garde Demi";
+    src: url(fonts/ITCAvantGardeStd-Demi.ttf);
+}
+
 body {
     background-image: url("background_01.png");
     background-size: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.home_logo {
-    width: 1000px;
-    margin: 5px auto 5px auto;
+/* top navbar */
+
+.nav {
     position: relative;
+    max-height: fit-content;
 }
 
-.logo {
-    display: block;
-    margin: auto;
-    width: 65%;
+.nav > .logo {
+    width: 600px;
+    z-index: -1;
 }
 
-.home_icons {
+.nav > a > .icon {
     position: absolute;
+    width: 60px;
+    max-height: 100%;
 }
 
-.icons {
-    display: block;
-    width: 50%;
-    margin: auto;
+.nav > a > .icon:hover {
+    filter: brightness(175%);
 }
 
-.welcome {
-    display: block;
-    margin: auto;
-    width: 65%;
+/* main box */
+
+.main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+}
+
+.main_image {
+    width: 600px;
     height: auto;
+    margin: 10px;
 }
 
-.big_box {
-    width: 850px;
-    margin: 5px auto 5px auto;
+.box {
+    margin: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: fit-content;
 }
 
-.small_box_01 {
-    background-color: hsl(144, 57%, 20%);
-    margin: 10px auto 10px auto;
-    padding: 5px;
-    width: 750px;
-    box-shadow: 5px 5px hsla(144, 57%, 20%, 0.5);
+.box .box_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.box .box_title {
+    margin: 0px;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Avant Garde Demi";
+}
+
+.box .box_table .box_cell .cell_img {
+    display: flex;
+    float: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.box .box_table .box_cell img {
+    max-width: 80px; 
+    height: 100%;
+    margin: 5px;
+}
+
+.box .box_table img:hover {
+    filter: brightness(60%);
 }
 
 p {
     color: white;
     font-family: "Futura Light";
+}
+
+/* bottom navbar */
+
+.bottom_bar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.bottom_bar img {
+    height: 25px;
+    max-width: 100%;
+}
+
+.box.green {
+    background-color: hsl(144, 57%, 20%);
+}
+
+.box.green .box_title  {
+    background-color: hsl(144, 57%, 33%);
+}
+
+.box.purple {
+    background-color: hsl(273, 57%, 20%);
+}
+
+.box.purple .box_title  {
+    background-color: hsl(271, 57%, 33%);
+}
+
+.boxes {
+    width: 850px;
+    display: flex;
+    justify-content: center;
 }
